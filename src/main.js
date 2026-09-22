@@ -27,6 +27,7 @@ async function boot() {
   window.addEventListener('hashchange', route);
   route();
   shell = mountExecShell({
+  theme: 'ember',
     title: 'Government Service Portal',
     tagline: `A prototype of citizen-facing service delivery for a fictional city: a searchable catalogue of ${cat.services.length} services with fee rules and processing times, a complete permit application with validation, save-and-resume, review and a checksummed reference, a status check, and a benefits pre-screener that says what it is not. Not a government website.`,
     repo: 'https://github.com/Freddricklogan/Government-Service-Portal',
